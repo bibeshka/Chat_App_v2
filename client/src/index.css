@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-page-container {
+  width: 100vw;
+  height: 100vh;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(45, 45, 58);
+}
+
+.login-page-container p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: rgb(182, 182, 183);
+}
+
+.login-page-container input {
+  font-size: 14px;
+  padding: 12px;
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+.login-page-container button {
+  font-size: 18px;
+  padding: 12px;
+  width: 100%;
+  background: rgb(119, 44, 232);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+
+  margin-top: 30px;
+}
+
+.login-form h1 {
+  color: rgb(182, 182, 183);
+  font-size: 2.5rem;
+  font-weight: 800;
+} 
+
+.login-form {
+  padding: 24px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+/* .login-form form {
+  margin: 0 auto;
+} */
+
+/* Chat style */
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.chat-container .chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+  background-color: rgb(229, 229, 231);
+  
+}
+
+.chat-container .chat__main .chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0 24px;
+  overflow-y: scroll;
+}
+
+.chat-container .chat__main .chat__massage-form {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 16px;
+  padding: 24px;
+}
+
+.chat-container .chat__main .chat__massage-form button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7C5CBF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: background .3s ease;
+}
+
+.chat-container .chat__main .chat__massage-form form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.chat-container .chat__main .chat__massage-form form input {
+  border: 1px solid #bbb9b9;
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+}
+
+.chat-container .chat__main .chat__massage-form form button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7C5CBF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: background .3s ease;
+}
+
+/* Message Styles */
+
+.chat__message {
+  margin-bottom: 16px;   
+}
+
+.message__name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.message__meta {
+  color: #777;
+  font-size: 14px;
+}
+
+.message a {
+  color: #0070CC;
+}
+
+/* Sidebar styles */
+
+.open-sidebar {
+  display: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  background-color: #7C5CBF;
+  max-width: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.chat-container .chat-sidebar {
+  height: 100vh;
+  width: 280px;
+  background-color: rgb(45, 45, 58);
+  overflow-y: scroll;
+  position: relative;
+}
+
+.room-container .room-title {
+  font-weight: 500;
+  font-size: 28px;
+  background: #2c2f3a;
+  padding: 24px; 
+  color: #bbb9b9;
+}
+
+.room-container .list-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 12px 24px 0 24px;
+  color: #bbb9b9;
+}
+
+.room-container .users {
+  list-style-type: none;
+  font-weight: 300;
+  padding: 12px 24px 0 24px;
+  color: #fff;
+}
+
+.sidebar-functional {
+
+}
+
+.sidebar-functional .back-button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7C5CBF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: background .3s ease;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .chat-container .chat-sidebar {
+    display: none;
+  }
+
+  .open-sidebar {
+    display: block;
+  } 
+
+  .chat-container .chat__main .chat__massage-form  {
+    display: block;
+  }
+
+  #chat__send-location {
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+}
